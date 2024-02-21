@@ -16,3 +16,10 @@ import "./src/styles/tut.css"
 import "./src/styles/jquery-ui.min.css"
 import "./src/styles/jquery.fancybox.min.css"
 
+// gatsby-browser.js & gatsby-ssr.js
+import React from "react";
+import { ClickProvider } from "./src/Context/Context";
+
+export const wrapRootElement = ({ element }) => {
+  return <ClickProvider>{element}</ClickProvider>;
+};

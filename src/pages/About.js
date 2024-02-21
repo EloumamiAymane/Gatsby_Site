@@ -30,18 +30,18 @@ const [active,setActive]=useState("")
                                                         <div class="col-lg-4 col-md-6 col-sm-12 content-column">
                                                             <div class="content-box">
                                                                 <div class="sec-title text-left">
-                                                                    <p>About Company</p>
-                                                                    <h2>Mission is to bring the power of AI to every business</h2>
+                                                                    <p>Reseaux & Opportunités </p>
+                                                                    <h2>Votre Carrière, Votre Réseau, Notre App!</h2>
                                                                     <div class="decor"style={{ backgroundImage: 'url(https://naxly.wpcomstaging.com/wp-content/themes/naxly/assets/images/icons/decor-1.png)' }}></div>
                                                                 </div>
                                                                 <div class="text">
-                                                                    <p>As a solution providing company we offer a wide range of consulting, development &amp; quality services with 100% satisfaction.</p>
+                                                                    <p>Trouvez des opportunités professionnelles exclusives grâce à notre réseau d'entreprises partenaires, offrant des offres d'emploi adaptées à vos compétences et à votre formation spécifique à l'INSEA</p>
                                                                 </div>
                                                                 <ul class="list-item clearfix">
-                                                                    <li><span class="dots"></span>Idea of denouncing pleasure &amp; praising</li>
-                                                                    <li><span class="dots"></span>Ever undertakes laborious physical</li>
-                                                                    <li><span class="dots"></span>Avoids a pain that produces no resultant</li>
-                                                                    <li><span class="dots"></span>Great explorer of the real truth</li>
+                                                                    <li><span class="dots"></span>Trouvez des offres d'emploi exclusives pour diplômés</li>
+                                                                    <li><span class="dots"></span>Accédez à des opportunités ciblées selon vos compétences</li>
+                                                                    <li><span class="dots"></span>Bénéficiez de la réputation de l'INSEA auprès d'employeurs</li>
+                                                                    <li><span class="dots"></span>Connectez-vous directement avec des entreprises partenaires renommées</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -117,9 +117,9 @@ const [active,setActive]=useState("")
                                             </div>
                                             <div class="tab-btn-box">
                                                 <ul class="tab-btns tab-buttons clearfix">
-                                                    <li class={`${activeTab === 0 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab-0" onClick={() => handleTabClick(0)}><h4>Our Mission</h4></li>
-                                                    <li class={`${activeTab === 1 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab1" onClick={() => handleTabClick(1)}><h4>Our Personality</h4></li>
-                                                    <li class={`${activeTab === 2 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab-2" onClick={() => handleTabClick(2)}><h4>Core Values</h4></li>
+                                                    <li class={`${activeTab === 0 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab-0" onClick={() => handleTabClick(0)}><h4>Emplois INSEA</h4></li>
+                                                    <li class={`${activeTab === 1 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab1" onClick={() => handleTabClick(1)}><h4>Carrière Dynamisée</h4></li>
+                                                    <li class={`${activeTab === 2 ? `tab-btn ${active} `:'tab-btn'} `} data-tab="#tab-2" onClick={() => handleTabClick(2)}><h4>Réseau Gagnant</h4></li>
                                                 </ul>
                                             </div>
                                         </div>

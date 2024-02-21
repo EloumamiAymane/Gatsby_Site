@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from './Navbar'
+import ClickContext from '../../Context/Context';
 
 const StickyHeader = () => {
+    const {  openMenu } = useContext(ClickContext);
+
 return (
 <div class="auto-container">
     <div class="row clearfix">
@@ -42,18 +45,21 @@ return (
 
                 <div class="header-upper clearfix">
                     <div class="menu-area pull-right clearfix">
-                        {/*
-                        <!--Mobile Navigation Toggler--> */}
-                        <div class="mobile-nav-toggler">
-                            <i class="icon-bar"></i>
-                            <i class="icon-bar"></i>
-                            <i class="icon-bar"></i>
-                        </div>
-                        <Navbar />
-
-                       
-                    </div>
+     {/*
+     <!--Mobile Navigation Toggler--> */}
+     <div class="mobile-nav-toggler" onClick={openMenu}>
+         <i class="icon-bar"></i>
+         <i class="icon-bar"></i>
+         <i class="icon-bar"></i>
+     </div>
+     <Navbar />
+     <div class="btn-box" >
+         <a href="http://el.commonsupport.com/newwp/naxly/get-in-touch/" class="theme-btn style-one">Join Us</a>
+     </div>
+ </div>
+                    
                 </div>
+                
             </div>
         </div>
     </div>

@@ -1,12 +1,14 @@
-import * as React from "react"
+import React, { useContext } from "react"
+import ClickContext from "../Context/Context";
 
 
 const Mobile = () => {
+    const {  closeMenu } = useContext(ClickContext);
 return (
 <div class="mobile-menu">
 
     <div class="menu-backdrop"></div>
-    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <div class="close-btn" onClick={ closeMenu}><i class="fas fa-times" ></i></div>
 
     <nav class="menu-box mCustomScrollbar _mCS_1">
         <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style={{ maxHeight: '44px' }}

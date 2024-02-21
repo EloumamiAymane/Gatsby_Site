@@ -1,11 +1,7 @@
-// const React = require("react")
+// gatsby-browser.js & gatsby-ssr.js
+import React from "react";
+import { ClickProvider } from "./src/Context/Context";
 
-// export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
-//   setHeadComponents([
-//     <script
-//       src="https://code.jquery.com/jquery-3.4.1.min.js"
-//       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-//       crossOrigin="anonymous">
-//     </script>,
-//   ])
-// }
+export const wrapRootElement = ({ element }) => {
+  return <ClickProvider>{element}</ClickProvider>;
+};

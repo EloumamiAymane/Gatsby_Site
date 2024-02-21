@@ -1,4 +1,4 @@
-import * as React from "react"
+import  React, { useContext } from "react"
 import Header from "./Header"
 import MainPage from "./MainPage"
 import FirstMenu from "./FirstMenu"
@@ -19,14 +19,22 @@ import { withPrefix } from "gatsby"
 import Scroll from "./Scroll"
 import Search from "./Search"
 import { Helmet } from "react-helmet"
+import ClickContext from "../Context/Context"
+import Process from "./Process"
+import Process1 from "./Process1"
+import List from "./List"
+import Faq from "./Faq"
 
 
 
 const IndexPage = () => {
+  const {  click } = useContext(ClickContext);
+  const mobile="mobile-menu-visible"
   return (
-    <body class="home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer
-     elementor-default elementor-kit-9 elementor-page elementor-page-1469 dialog-body dialog-buttons-body dialog-container 
-     dialog-buttons-container customize-support e--ua-firefox"
+  
+    <body class={`${click ? `home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer
+    elementor-default elementor-kit-9 elementor-page elementor-page-1469 dialog-body dialog-buttons-body dialog-container 
+    dialog-buttons-container customize-support e--ua-firefox ${mobile}`:'home page-template page-template-tpl-default-elementor page-template-tpl-default-elementor-php page page-id-1469 logged-in admin-bar wp-custom-logo menu-layer elementor-default elementor-kit-9 elementor-page elementor-page-1469 dialog-body dialog-buttons-body dialog-container  dialog-buttons-container customize-support e--ua-firefox'} `}
      data-elementor-device-mode="desktop"
      style={{ overflow: 'visible' }}
      >
@@ -42,17 +50,23 @@ const IndexPage = () => {
     <FirstMenu/>
     <About/>
     <Work/>
-    <Industry/>
-    <Skill/>
+    {/* <Industry/> */}
+    <Process/>
+          {/* <Skill/> */}
+          <List/>
     <Testimonials/>
-   <Case/>
-   <Fact/>
+    <Faq/>
+   {/* <Case/> */}
+   {/* <Fact/> */}
+   <Process1/>
    <News/>
-   <Publicity/>
+  
+   {/* <Publicity/> */}
     </div>
     <Footer/>
     </div>
     </body>
+ 
   )
 }
 
@@ -60,7 +74,5 @@ export default IndexPage
 
 export const Head = () => <>
 <title>Home Page</title>
-<Helmet>
-{/* <script src={withPrefix("../js/script.js")} type="text/javascript" /> */}
-</Helmet>
+
 </>

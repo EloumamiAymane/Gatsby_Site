@@ -5,7 +5,7 @@ import FixedNav from "../Components/Header/FixedNav"
 // import "../js/scrollbar"
 const Header = () => {
 return (
-<header class="main-header -one home-1 fixed-header">
+<header class="main-header style-one home-1 fixed-header">
 
     <StickyHeader />
     <FixedNav />

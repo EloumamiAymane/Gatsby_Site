@@ -40,7 +40,6 @@
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
   -o-transition:all 500ms ease;
-  transform: translateY(-45%);
 }
 
 .fixed-header .sticky-header{
@@ -74,7 +73,6 @@
 
 .main-menu{
   float:left;
-  /* width: 150%; */
 }
 
 .main-menu .navbar-collapse{
@@ -86,22 +84,10 @@
   position:inherit;
   margin:0px;
 }
-/** changes***/
-#x .navigation > li{
-  position:relative;
-  float:left;
-  left: -20%;
-}
-#x{
-  width: 200%;
-}
 
-/** changes***/
 .main-menu .navigation > li{
   position:inherit;
   float:left;
-  /* left: -30%; */
-/* transform: translateX(-100%); */
   z-index:2;
   padding:30px 0px 20px 0px;
   margin: 0px 25px;

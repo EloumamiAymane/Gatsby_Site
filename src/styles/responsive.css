@@ -51,7 +51,10 @@
 
 
 @media only screen and (max-width: 1399px){
-
+  /**changes*/
+#btnNav{
+  display: none;
+}
   .main-header.style-three .right-column .social-links,
   .main-header.style-seven .right-column{
     display: none;
@@ -344,13 +347,8 @@
 
 
 @media only screen and (max-width: 991px){
-.support span{
-  color: #666;
-}
-.support  a:hover{
-  color: #666;
-}
-
+ 
+ 
   .main-menu,
   .sticky-header,
   .main-header.style-one .outer-container:before{
@@ -361,7 +359,7 @@
     display: block;
     margin-top: 30px;
     padding: 10px;
-   background-color: black;
+   
   }
 
   .banner-section .content-box{
@@ -881,6 +879,7 @@
   .main-header.style-one .header-upper .menu-area .btn-box{
     display: inline-block;
     margin-top: 26px;
+    
   }
   
   .main-header.style-one .header-upper{
@@ -893,6 +892,7 @@
 
   .main-header.style-one .header-upper .menu-area .btn-box{
     margin-left: 0px;
+  
   }
 
   .main-header.style-one .logo-box{
@@ -923,6 +923,7 @@
 
   .main-header.style-one.home-1 .header-top .support a{
     color: #666;
+   
   }
 
   .main-header.style-one.home-1 .header-top .social-links li a,
@@ -963,7 +964,7 @@
   .main-footer.home_rtl .widget-section .about-widget .widget-content .box{
     padding-top: 20px;
   }
-
+ 
 
 }
 
@@ -1759,6 +1760,8 @@
 
   .main-header .theme-btn.style-one{
     padding: 7px 15px !important;
+    /* position: fixed;
+    right: 50%; */
   }
 
   .testimonial-style-two .lower-content .testimonial-content .inner-box .content-box p{

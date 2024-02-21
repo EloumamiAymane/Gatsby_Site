@@ -1279,9 +1279,9 @@
 	top: 3px;
 	font-size: 60px;
 	line-height: 60px;
-	color: white;
+	color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: transparent;
 }
 
 .counter-block-one .inner-box .count-outer{
@@ -17887,24 +17887,4 @@ a.ui-button:active,
     bottom: 0;
     padding: 0px 10px;
     margin: auto;
-}
-/***btn touch**/
-.BTnTouch{
-	
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 700 !important;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #fff !important;
-	background: transparent;
-	padding: 7px 30px;
-	margin-left: 50px;
-	text-align: center;
-	cursor: pointer;
-	background-size: 200% auto;
-	border-radius: 5px;
-	z-index: 1;
-	transition: all 500ms ease; 
-	background-image: linear-gradient(to right, #fb5155 0%, #f92a75 50%, #fb5155 100%);
-	
 }
